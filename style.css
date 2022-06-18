@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.header {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(102, 104, 102);
+}
+
+.rows .container {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+
+.row {
+  display: flex;
+  justify-content: start;
+  flex-flow: row nowrap;
+}
+
+.head,
+.tail {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.char {
+  width: 50px;
+  height: 50px;
+  background-color: #dce3d7;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.char:hover {
+  background-color: rgb(165, 217, 159);
+  border: 2px solid rgb(97, 171, 128);
+  cursor: pointer;
+}
+
+.head {
+  order: 2;
+  position: relative;
+  right: 50%;
+}
+
+.tail {
+  order: 1;
+  margin-right: auto;
+  position: relative;
+  left: 50%;
+}
+
+.footer .container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding-top: 30px;
+  gap: 20px;
+}
+
+.selected-chars {
+  height: 50px;
+  width: 500px;
+  border: 1px solid rgb(161, 160, 160);
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result {
+  height: 50px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 20px;
+}
+
+.btn {
+  flex: 1;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+.btn-alt {
+  border: none;
+  padding: 16px 30px;
+}
+
+.replay-btn {
+  background-color: #fff;
+  border: 1px solid #9ec2b4;
+  color: #000;
+}
+
+.replay-btn:hover {
+  background-color: rgb(214, 223, 206);
+}
+
+.submit-btn {
+  background-color: #5eba33;
+  color: #fff;
+}
+
+.submit-btn:hover {
+  background-color: #4b9927;
+}
